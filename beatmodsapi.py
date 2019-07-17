@@ -228,7 +228,7 @@ class ModSpec():
             version = list(map(int, d["version"].split(".")))
         except:
             version = [0, 0, 0]
-        gameVersion = list(map(int, d["gameVersion"].split(".")))
+        gameVersion = d["gameVersion"].split(".")
 
         c = d["category"]
         if c == "Core":
